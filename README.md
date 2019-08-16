@@ -1,24 +1,10 @@
-# The Repo for 'Basics of Git'.
-
-Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
-
-A Version Control System (VCS) allows you to revert files back to a previous state, revert the entire project back to a previous state, review changes made over time, see who last modified something that might be causing a problem, who introduced an issue and when, and more. Using a VCS also means that if you screw things up or lose files, you can generally recover easily. And sometimes you just want to know **“who wrote this crap”**, and having access to that information is worthwhile 😈.
-
-## So What is Git?
+# The Repo for 'Git Basics'.
 
 Git is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people. Git is a ***Distributed Version Control System***. So Git does not necessarily rely on a central server to store all the versions of a project’s files. Instead, every user “clones” a copy of a repository (a collection of files) and has the ***full*** history of the project on their own hard drive. This clone has *all* of the metadata of the original while the original itself is stored on a self-hosted server or a third party hosting service like GitHub.
 
-Git helps you ***keep track of the changes*** you make to your code. It is basically the history tab for your code editor(With no incognito mode 🌚). If at any point while coding you hit a fatal error and don’t know what’s causing it you can always revert back to the stable state. So it is very helpful for debugging. Or you can simply see what changes you made to your code over time.
-
-![A simple example of version history of a file.](https://cdn-images-1.medium.com/max/4912/1*Lp_67l9zwur7aaFAhpVDrg.png)*A simple example of version history of a file.*
-
-In the example above, all three cards represent different versions of the same file. We can select which version of the file we want to use at any point of time. So I can jump to and fro to any version of the file in the git time continuum.
+Git helps you ***keep track of the changes*** you make to your code. It is basically the history tab for your code editor(With no incognito mode). If at any point while coding you hit a fatal error and don’t know what’s causing it you can always revert back to the stable state. So it is very helpful for debugging. Or you can simply see what changes you made to your code over time.
 
 Git also helps you ***synchronise code*** between multiple people. So imagine you and your friend are collaborating on a project. You both are working on the same project files. Now Git takes those changes you and your friend made independently and merges them to a single “**Master**” repository. So by using Git you can ensure you both are working on the most recent version of the repository. So you don’t have to worry about mailing your files to each other and working with a ridiculous number of copies of the original file. And collaborating long distance becomes as easy as HTML 🙃.
-
-## Git Workflow:
-
-Before we start working with Git commands, it is necessary that you understand what it represents.
 
 ### What is a Repository ?
 
@@ -54,7 +40,7 @@ A **repository** a.k.a. **repo** is nothing but a collection of source code.
 
 I’m assuming you already have a file the you want to place under version control. If not create a sample folder named ‘MuskCult’ and place some sample code files in it.
 
-## Step 0: Make a GitHub Account. Duh.
+## Step 0: Make a GitHub Account.
 
 If you don't already have one, you can make one [here](https://github.com/join).
 
@@ -72,14 +58,11 @@ If you are running **Linux**(deb), enter the following in the terminal:
 
 If you are on **Windows**:
 
-    $ get a mac
+Run this [**link](https://www.apple.com/macos/what-is/)** or this** [link](https://gitforwindows.org/)** for more info on how to get it.
 
-Just kidding… Relax… The amount of people I triggered… Phew…
-Go to this [**link](https://www.apple.com/macos/what-is/)** or this** [link](https://gitforwindows.org/)** for more info on how to get it.
+## Step 2: Git account.
 
-## Step 2: Tell Git who you are.
-
-Introduce yourself. Slide in. Seriously, mention your Git username and email address, since every Git commit will use this information to identify you as the author.
+Enter your Git username and email address, since every Git commit will use this information to identify you as the author.
 
     $ git config --global user.name "YOUR_USERNAME"
 
